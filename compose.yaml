@@ -1,0 +1,12 @@
+﻿services:
+  imageresizer.webapi:
+    image: imageresizer.webapi
+    build:
+      context: .
+      dockerfile: ImageResizer.WebAPI/Dockerfile
+
+  imageresizer.worker:
+    image: imageresizer.worker
+    build:
+      context: .
+      dockerfile: ImageResizer.Worker/Dockerfile
